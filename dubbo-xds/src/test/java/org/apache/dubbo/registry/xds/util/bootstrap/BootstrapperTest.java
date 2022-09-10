@@ -134,8 +134,8 @@ public class BootstrapperTest {
 
     @Test
     public void testUrl() {
-        URL url = URL.valueOf("dubbo://127.0.0.1:23456/TestService?useAgent=true");
-        Assertions.assertTrue(url.getParameter("useAgent", false));
+        URL url = URL.valueOf("dubbo://127.0.0.1:23456/TestService?use-agent=true");
+        Assertions.assertTrue(url.getParameter("use-agent", false));
     }
 
     private static BootstrapperImpl.FileReader createFileReader(final String rawData) {
